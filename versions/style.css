@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Melodrama', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+::selection{
+    background: white;
+    color: black;
+    border-color: black;
+}
+.contCon{
+    width: 100%;
+    height: 837px;
+}
+.scroll-pageBtn{
+    width: 5%;
+    margin-left: 34.83%;
+    background: none;
+    border: none;
+    font-size: 70px;
+    text-align: center;
+    transform: rotate(90deg) translate(-250px);
+}
+.scroll-pageBtn a{
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+}
+.scroll-pageBtn:hover a:hover{
+    color: rgb(111, 52, 52);
+}
+.fst-layer-picture-Mb{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(photo/meteora-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.snd-layer-picture-Mb{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(photo/Mb-snd-BABC706F-CA8E-457A-A59C-90751FCD896E.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translate(0,-70px);
+}
+.trd-layer-picture-Mb{
+    width: 100%;
+    height: 100%;
+    background: url(photo/Mb-trd-B6C764F1-5D88-43F6-891B-E1BBFC8923A7.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translate(0,-70px);
+}
+.ref-title{
+    color: white;
+    font-size: 11.25rem;
+    position: absolute;
+    animation: txtRefAppearance 2s ease;
+    transform: translate(30px,400px);
+    animation-fill-mode: both;
+}
+.res-title{
+    color: rgb(111, 52, 52);
+    font-size: 11.25rem;
+    animation: txtResAppearance 2s ease;
+    transform: translate(-30px,480px);
+    animation-fill-mode: both;
+    float: right;
+}
+.menu-title{
+    width: 40%;
+    float: left;
+    height: 11.25rem;
+    font-size: 9rem;
+    transform: translate(688px,500px);
+    color: white;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    opacity: 0;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+}
+.addit{
+    flex: 1;
+}
+.menuDivE{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    margin: 40px 20px 0 0;
+    z-index: 2;
+}
+.changableTextSectE{
+    height: 20px;
+    overflow: hidden;
+    transform: translate(0,5px);
+}
+.additSectHelpE{
+    height: 41px;
+    background: transparent;
+    transition: .5s ease;
+}
+.menuDiv{
+    border: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    margin: 40px 70px 0 0;
+    z-index: 2;
+}
+.changableTextSect{
+    height: 20px;
+    overflow: hidden;
+    transform: translate(0,5px);
+}
+.additSectHelp{
+    height: 40px;
+    background: transparent;
+    transition: .5s ease;
+}
+.innerDecorSect{
+    width: 4px;
+    height: 4px;
+    margin: 8px;
+    border: none;
+    visibility: hidden;
+}
+.outerDecorSect{
+    width: 26px;
+    height: 26px;
+    margin: 0 0 0 20px;
+    border: solid white 2px;
+    border-radius: 7px;
+    transform: rotate(45deg);
+}
+/* Search bar start ////////////////////////////////////////////////// */
+.data-search{
+    position: relative;
+    background: rgb(231, 219, 219);
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    border-radius: 40px;
+    transform: translate(550px,-400px);
+    transition: .5s;
+    z-index: -10;
+}
+.data-search-data{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background: rgb(111, 52, 52);
+    box-shadow: 0 10px 30px black;
+    opacity: 1;
+    overflow: hidden;
+}
+#searchInput{
+    height: 100%;
+    background: none;
+    padding-left: 30px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    outline: none;
+    flex: 1;
+    opacity: 0;
+}
+#searchBtn{
+    float: right;
+    width: 60px;
+    height: 100%;
+    background: rgb(111, 52, 52);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+#searchBtn:hover img{
+    filter: invert(100%);
+}
+#searchBtn img{
+    filter: invert(60%);
+    transform: translate(-5px,1px);
+}
+/* Search bar end //////////////////////////////////////////////////// */
+.menuContent{
+    width: auto;
+    height: 350px;
+    float: left;
+    position: relative;
+    transform: translate(760px,-760px);
+    opacity: 0;
+    padding-top: 30px;
+    padding-left: 15px;
+    font-size: 1.75rem;
+    overflow: scroll;
+}
+.menuContent a{
+    width: auto;
+    text-decoration: none;
+    color: white;
+}
+.outerSect{
+    width: 7px;
+    height: 7px;
+    border: solid rgb(111, 52, 52) 2px;
+    border-radius: 2px;
+    transform: rotate(45deg) translate(1px,18px);
+}
+.innerSect{
+    width: 5px;
+    height: 5px;
+    margin: 1px;
+    border: none;
+    border-radius: 2px;
+    background: white;
+}
+.links{
+    display: flex;
+    margin-bottom: 5px;
+    pointer-events: all;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.links:hover{
+    text-decoration: underline;
+}
+/* next screen/Categories screen ///////////////////////////////////// */
+.layout{
+    width: 100%;
+    height: 837px;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.layout-element-category{
+    width: auto;
+    height: auto;
+    padding: 30px;
+    font-family: 'Melodrama', serif;
+    font-size: 80px;
+    /* transition: .3s; */
+    background: transparent;
+}
+.layout-element-category:hover>hr{
+    background: rgb(111, 52, 52);
+}
+.layout-element-category:hover>.h{
+    animation: hrWidthAnimation-h 1s;
+    animation-fill-mode: both;
+}
+.layout-element-category:hover>.f{
+    animation: hrWidthAnimation-f 1s;
+    animation-fill-mode: both;
+}
+.layout-element-category:hover>.j{
+    animation: hrWidthAnimation-j 1s;
+    animation-fill-mode: both;
+}
+.layout-element-category:hover>.e{
+    animation: hrWidthAnimation-e 1s;
+    animation-fill-mode: both;
+}
+hr{
+    background: lightgray;
+    border: none;
+    width: 35px;
+    height: 3px;
+    transition: .2s;
+}

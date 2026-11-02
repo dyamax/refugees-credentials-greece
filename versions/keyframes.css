@@ -1,0 +1,90 @@
+@keyframes txtRefAppearance{
+    from{transform: translate(30px,400px);}
+    to{transform: translate(30px,170px);}
+}
+@keyframes txtRefDisapp{
+    from{transform: translate(30px,170px);}
+    tp{transform: translate(30px,400px);}
+}
+@keyframes txtResAppearance{
+    from{transform: translate(-30px,480px);}
+    to{transform: translate(-30px,250px);}
+}
+@keyframes txtResDisapp{
+    from{transform: translate(-30px,250px);}
+    to{transform: translate(-30px,480px);}
+}
+@keyframes menuTitApp{
+    from{transform: translate(725px,500px);opacity: 0;}
+    to{transform: translate(725px,-10px);opacity: 1;}
+}
+@keyframes menuTitDisapp{
+    from{transform: translate(725px,-10px);opacity: 1;}
+    to{transform: translate(725px,500px);opacity: 0;}
+}
+@keyframes rotationAnimation{
+    fron{transform: rotate(45deg);}
+    to{transform: rotate(225deg);}
+}
+@keyframes rotationAnimation1{
+    fron{transform: rotate(45deg);}
+    to{transform: rotate(-135deg);}
+}
+@keyframes contExp{
+    from{transform: translate(687px,251px);}
+    to{transform: translate(687px,-71px);height: 600px;}
+}
+@keyframes contentMaker{
+    0%{opacity: 0;}
+    90%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes contentDisMaker{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@keyframes searchBarApp{
+    45%{transform: translate(550px,-400px);}
+    50%{transform: translate(550px,-605px);}
+    55%{transform: translate(550px,-595px);}
+    60%{transform: translate(550px,-605px);}
+    65%{transform: translate(550px,-600px);}
+    70%{transform: translate(350px,-600px);width: 60px;z-index: -10;}
+    100%{transform: translate(350px,-600px);width: 50%;z-index: 0;}
+}
+@keyframes iconMove{
+    0%{transform: translate(0,0);}
+    70%{transform: translate(0,0);}
+    100%{transform: translate(0,0);}
+}
+@keyframes searchLine{
+    0%{opacity: 0;}
+    90%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes searchLineDisapp{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+@keyframes searchBarDisapp{
+    0%{transform: translate(350px,-600px);width: 50%;}
+    30%{transform: translate(345px,-600px);width: 60px;z-index: -10;}
+    35%{transform: translate(355px,-600px);}
+    100%{transform: translate(-200px,-600px);}
+}
+@keyframes hrWidthAnimation-h{
+    from{width: 35px;}
+    to{width: 255px;}
+}
+@keyframes hrWidthAnimation-f{
+    from{width: 35px;}
+    to{width: 182px;}
+}
+@keyframes hrWidthAnimation-j{
+    from{width: 35px;}
+    to{width: 137px;}
+}
+@keyframes hrWidthAnimation-e{
+    from{width: 35px;}
+    to{width: 330px;}
+}

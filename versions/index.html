@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>website.website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="keyframes.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=melodrama@400&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=supreme@400,300&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="contCon">
+        <div class="fst-layer-picture-Mb">
+            <div class="navBar">
+                <div class="addit"></div>
+                <button class="menuDivE">
+                    <div class="changableTextSectE">
+                        <div class="additSectHelpE" id="EPER">
+                            <p onclick="fSearchBar()" style="font-family: Arial, Helvetica, sans-serif;">Browse</p>
+                            <p onclick="fSearchBarClose()" style="font-family: Arial, Helvetica, sans-serif;">Hide</p>
+                        </div>
+                    </div>
+                </button>
+                <button class="menuDiv">
+                    <div class="changableTextSect">
+                        <div class="additSectHelp" id="APER">
+                            <p onclick="fMenu()" style="font-family: Arial, Helvetica, sans-serif;">Explore</p>
+                            <p onclick="fMenuClose()" style="font-family: Arial, Helvetica, sans-serif;">Close</p>
+                        </div>
+                    </div>
+                    <div class="outerDecorSect" id="outerDecorSect">
+                        <div class="innerDecorSect" id="decorativeSect">
+                            <img src="photo/icon.php.png" width="10px" style="transform: rotate(45deg) translate(-6.3px,-6.3px);">
+                        </div>
+                    </div>
+                </button>
+            </div>
+            <p class="menu-title" id="menuTitle" id="menu-title">Explore</p>
+            <p class="ref-title" id="ref">Refugee</p>
+            <p class="res-title" id="res">Resource</p>
+            <div class="snd-layer-picture-Mb"></div>
+            <div class="trd-layer-picture-Mb"></div>
+            <!-- <div class="outputMenuSelection">
+                <div class="txtOutput" id="txtOutput"></div>
+            </div> -->
+            <form action="/search" method="get">
+                <div class="data-search" id="datSear">
+                    <div class="data-search-data">
+                        <input type="text" placeholder="Search..." name="search" id="searchInput">
+                        <button type="submit" id="searchBtn">
+                            <img src="photo/icon-search.png" style="width: 30px;">
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <button class="scroll-pageBtn">
+                <a href="#layout"><p>❭</p></a>
+            </button>
+            <div class="menuContent" id="mCon">
+                <div class="links">
+                    <div class="outerSect">
+                        <div class="innerSect"></div>
+                    </div>
+                    <a href="#" ondblclick="hiddenInfoClass()">Consulates</a>
+                </div>
+                <div class="links">
+                    <div class="outerSect">
+                        <div class="innerSect"></div>
+                    </div>
+                    <a href="#" ondblclick="hiddenInfoClass1()">Hotels</a>
+                </div>
+                <div class="links">
+                    <div class="outerSect">
+                        <div class="innerSect"></div>
+                    </div>
+                    <a href="#" ondblclick="hiddenInfoClass2()">Restaurants</a>
+                </div>
+                <div class="links">
+                    <div class="outerSect">
+                        <div class="innerSect"></div>
+                    </div>
+                    <a href="#" ondblclick="hiddenInfoClass3()">Public transport</a>
+                </div>
+                <div class="links">
+                    <div class="outerSect">
+                        <div class="innerSect"></div>
+                    </div>
+                    <a href="#layout">Categories</a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="layout" id="layout">
+        <div class="layout-element-category LEC-a">
+            <p><b>Housing</b></p>
+            <hr class="h">
+        </div>
+        <div class="layout-element-category LEC-b">
+            <p><b>Food</b></p>
+            <hr class="f">
+        </div>
+        <div class="layout-element-category LEC-c">
+            <p><b>Job</b></p>
+            <hr class="j">
+        </div>
+        <div class="layout-element-category LEC-d">
+            <p><b>Education</b></p>
+            <hr class="e">
+        </div>
+    </div> 
+    <div class="layout" id="layout-1">
+        <div class="layout-element-category">
+            <p><b>Housing</b></p>
+            <hr style="width: auto;">
+        </div>
+        <div class="layout-element-category">
+            <p><b>Food</b></p>
+            <hr style="width: auto;">
+        </div>
+        <div class="layout-element-category">
+            <p><b>Employment</b></p>
+            <hr style="width: auto;">
+        </div>
+        <div class="layout-element-category">
+            <p><b>Education</b></p>
+            <hr style="width: auto;">
+        </div>
+    </div> 
+    <!-- <a href="#">Consulate of Belgium</a>
+    <a href="#">Consulate of Bulgaria</a>
+    <a href="#">Consulate of France</a>
+    <a href="#">Consulate of Germany</a>
+    <a href="#">Consulate of Russia</a>
+    <a href="#">Consulate of Hungary</a>
+    <a href="#">Consulata of Portugal</a>
+    <a href="#">Consulate of Romania</a>
+    <a href="#">Consulate of Serbia</a>
+    <a href="#">Consulate of Spain</a>
+    <a href="#">Consulate of Ukraine</a>
+    <a href="#">Consulate of United States</a> -->
+</body> 
+</html>
